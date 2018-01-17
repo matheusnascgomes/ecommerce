@@ -5,7 +5,7 @@
 
 	// include
 	include "library/Rain/Tpl.php";
-	
+
 	// config
 	$config = array(
 					"tpl_dir"       => "templates/simple/",
@@ -32,5 +32,5 @@
 	// draw the template
 	$tpl->draw( "simple_template" );
 
-        
+
 ?>
