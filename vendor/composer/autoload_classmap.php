@@ -8,6 +8,8 @@ $baseDir = dirname($vendorDir);
 return array(
     'EasyPeasyICS' => $vendorDir . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
     'Hcode\\DB\\Sql' => $vendorDir . '/hcodebr/php-classes/src/DB/Sql.php',
+    'Hcode\\Page' => $vendorDir . '/hcodebr/php-classes/src/Page.php',
+    'Hcode\\PageAdmin' => $vendorDir . '/hcodebr/php-classes/src/PageAdmin.php',
     'PHPMailer' => $vendorDir . '/phpmailer/phpmailer/class.phpmailer.php',
     'PHPMailerOAuth' => $vendorDir . '/phpmailer/phpmailer/class.phpmaileroauth.php',
     'PHPMailerOAuthGoogle' => $vendorDir . '/phpmailer/phpmailer/class.phpmaileroauthgoogle.php',
