@@ -57,6 +57,27 @@ $app->get('/admin/logout',function(){
 
 });
 
+$app->get('/admin/users',function(){
+
+	$page = new PageAdmin();
+
+	$page->setTpl("users");
+});
+
+$app->get('/admin/users/create',function(){
+
+	$page = new PageAdmin();
+
+	$page->setTpl("users-create");
+});
+
+$app->get('/admin/users/update',function(){
+
+	$page = new PageAdmin();
+
+	$page->setTpl("users-update");
+});
+
 $app->run();
 
  ?>
