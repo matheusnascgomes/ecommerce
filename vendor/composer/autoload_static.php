@@ -40,6 +40,8 @@ class ComposerStaticInit4ee82414c022f584ee76fa8d9aeac3c1
     public static $classMap = array (
         'EasyPeasyICS' => __DIR__ . '/..' . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
         'Hcode\\DB\\Sql' => __DIR__ . '/..' . '/hcodebr/php-classes/src/DB/Sql.php',
+        'Hcode\\Model' => __DIR__ . '/..' . '/hcodebr/php-classes/src/Model.php',
+        'Hcode\\Model\\User' => __DIR__ . '/..' . '/hcodebr/php-classes/src/Model/User.php',
         'Hcode\\Page' => __DIR__ . '/..' . '/hcodebr/php-classes/src/Page.php',
         'Hcode\\PageAdmin' => __DIR__ . '/..' . '/hcodebr/php-classes/src/PageAdmin.php',
         'PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmailer.php',

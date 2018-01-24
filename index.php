@@ -57,11 +57,18 @@ $app->get('/admin/logout',function(){
 
 });
 
+// ADMIN USUARIOS
 $app->get('/admin/users',function(){
+
+	User::verifyLogin();
+
+	$user = new User;
 
 	$page = new PageAdmin();
 
-	$page->setTpl("users");
+	$page->setTpl("users",[
+		"users"=>User::listAll()
+	]);
 });
 
 $app->get('/admin/users/create',function(){
