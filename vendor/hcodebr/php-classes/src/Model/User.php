@@ -139,7 +139,7 @@ class User extends Model{
   {
     $sql = new Sql();
 
-    $results = $sql->select("SELECT * FROM tb_persons a INNER JOIN tb_users b USING(idperson) WHERE a.desmail = :email",[
+    $results = $sql->select("SELECT * FROM tb_persons a INNER JOIN tb_users b USING(idperson) WHERE a.desemail = :email",[
       ":email"=>$email
     ]);
 
@@ -151,7 +151,7 @@ class User extends Model{
 
       $data = $results[0];
 
-      $results2 = $sql("CALL sp_userspasswordsrecoveries_create(:iduser, :desip)",[
+      $results2 = $sql->select("CALL sp_userspasswordsrecoveries_create(:iduser, :desip)",[
         ":iduser"=>$data['iduser'],
         ":desip"=>$_SERVER['REMOTE_ADDR']
       ]);
